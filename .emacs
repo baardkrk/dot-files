@@ -18,9 +18,9 @@
 
 (setq paradox-github-token  'f6ca0ea55b807a41c4c7424a97d2710c10bc0429)
 
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/monokai")
-(load-theme 'monokai t)
-;; (setq monokai-user-variable-pitch t)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/dracula")
+(load-theme 'dracula t)
+
 
 ;; auto complete and config
 (require 'auto-complete)
@@ -29,6 +29,16 @@
 
 (require 'yasnippet)
 (yas-global-mode 1)
+
+;; paredit mode (this didn't work for swirly brackets...
+;; also need something to auto-close html tags.
+(autoload 'enable-paredit-mode "paredit"
+  "Turn on pseudo-structural editing of Lisp code."
+  t)
+(add-hook 'emacs-lisp-mode-hook       'enable-paredit-mode)
+(add-hook 'lisp-mode-hook             'enable-paredit-mode)
+(add-hook 'lisp-interaction-mode-hook 'enable-paredit-mode)
+(add-hook 'scheme-mode-hook           'enable-paredit-mode)
 
 ;; function for auto complete c headers
 (defun c-header-init ()
