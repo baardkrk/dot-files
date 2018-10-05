@@ -1,9 +1,8 @@
-A Collection of Commandline Programs
-====================================
+Useful Commandline Programs
+===========================
 
 
-Recommendations from Bryan Lunduke
-----------------------------------
+### Recommendations from Bryan Lunduke
 
 For syncing the different documents [nextcloud][1] could be used.
 
@@ -11,7 +10,9 @@ For syncing the different documents [nextcloud][1] could be used.
 * `calcurse`    -  productivity. calendar, and todo list
 * `wordgrinder` -  word processor. 
 
+### Other programs
 
+* `emacs --no-window-system`   -  the best text processor
 
 
 
